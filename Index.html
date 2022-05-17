@@ -1,0 +1,66 @@
+<!doctype html>
+<head>
+  <!-- required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- importing google apis for a custom font-->
+
+
+  <!--Boostrap elements in the code-->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>WHITE-BOX-CARTOONIZATION</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: black;
+      font-family: Play ;
+    }
+    </style>
+  <div align='center' style="fill-opacity: 1;"><br>
+    <h1 style="color:whitesmoke;">🎬  WHITE BOX CARTOONIZATION</h1>
+  </div>
+  <div class="card-deck m-4 py-2 px-4 border-right-100">
+    <div class="card shadow-lg col-md-6">
+      <div class="card-body px-0 px-sm-2">
+        <div class="">
+          <label class="btn btn-primary btn-xs px-2">
+            Upload Pics <input type="file" id="file" name="file" accept="image/*" hidden>
+          </label>
+        </div>
+        <img id="input" class="d-block img-fluid mx-auto"></img>
+      </div>
+    </div>
+    <div class="card shadow-lg col-md-6">
+      <div class="card-body px-0 px-sm-2">
+        <div class="d-flex justify-content-between align-items-baseline">
+          <h5 class="card-title">Cartoonized Pic</h5>
+          <a id="download" class="btn btn-xs btn-primary px-2" download="cartoon.png" href="">Save</a>
+        </div>
+        <canvas id="output" class="d-none img-fluid mx-auto"></canvas>
+      </div>
+    </div>
+  </div>
+
+<body>
+<style>
+footer {
+  text-align: center;
+  text-shadow:black;
+  padding: 3px;
+  color: whitesmoke;
+}
+</style>
+<footer>
+  <p> Modified By zeroaxis</p>
+
+</footer>
+</body>
+
+  <script src="tf.min.js"></script>
+  <script src="tf-backend-wasm.js"></script>
+  <script async src="model.js"></script>
+</body>
+</html>
